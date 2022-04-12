@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { beforeNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
 	import Icon from 'svelte-awesome';
 	import { bars, instagram } from 'svelte-awesome/icons';
@@ -16,6 +17,8 @@
 	];
 
 	let showMobileNav = false;
+
+	beforeNavigate(() => (showMobileNav = false));
 </script>
 
 <header>
