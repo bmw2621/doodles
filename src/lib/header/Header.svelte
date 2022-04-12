@@ -13,7 +13,7 @@
 		{ path: '/', label: 'Home' },
 		{ path: '/doodles', label: 'Doodles' },
 		{ path: '/puppies', label: 'Puppies' },
-		{ path: '/media', label: 'Media' }
+		{ path: '/contact', label: 'Contact' }
 	];
 
 	let showMobileNav = false;
