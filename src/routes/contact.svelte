@@ -46,10 +46,10 @@
 		if (Object.values(formState).every((x) => x)) {
 			Email.send({
 				SecureToken: import.meta.env.VITE_SMTP_TOKEN,
-				To: 'benjamin.m.winchester@googlemail',
-				From: email,
+				To: 'benjamin.m.winchester@googlemail.com',
+				From: 'benjamin.m.winchester@googlemail.com',
 				Subject: `Doodles: Message from ${name}`,
-				Body: message
+				Body: `From: ${email}\n---------------------------\n\n${message}`
 			}).then((message: string) => {
 				if (message.toLowerCase() === 'ok') {
 					goto('/');
