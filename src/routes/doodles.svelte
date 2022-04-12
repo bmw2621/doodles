@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>The Doodles</title>
+	<title>The Doodles | The Doodles Tell All</title>
 </svelte:head>
 
 <div class="content">

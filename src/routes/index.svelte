@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Home | The Doodles Tell All</title>
 </svelte:head>
 
 <section>
