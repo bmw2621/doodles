@@ -81,6 +81,7 @@
 		position: absolute;
 		bottom: 20px;
 		text-shadow: 3px 3px 6px var(--heading-color);
+		font-size: 2.5rem;
 	}
 
 	.adopted {
@@ -111,6 +112,10 @@
 	@media (min-width: 480px) {
 		#doodles {
 			grid-template: auto / 1fr 1fr 1fr;
+		}
+
+		.puppy-name {
+			font-size: 2rem;
 		}
 	}
 </style>
