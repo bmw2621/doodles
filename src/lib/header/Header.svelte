@@ -54,7 +54,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="#"><Icon data={instagram} scale={3} /></a>
+		<a href="https://www.instagram.com/thedoodlestellall/"><Icon data={instagram} scale={3} /></a>
 	</div>
 </header>
 
