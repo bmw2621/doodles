@@ -1,6 +1,7 @@
 interface Puppy {
 	name: string;
 	adopted: boolean;
+	isMale: boolean;
 	imgUrl: string;
 	key: string;
 }

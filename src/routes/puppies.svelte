@@ -41,6 +41,14 @@
 						alt=""
 					/>
 					<h2 class="puppy-name">{puppy.name}</h2>
+					<h2
+						class="gender"
+						style:text-shadow={puppy.isMale
+							? '3px 3px 6px var(--heading-color)'
+							: '3px 3px 6px var(--accent-color)'}
+					>
+						{puppy.isMale ? 'Male' : 'Female'}
+					</h2>
 				</div>
 			{/each}
 		</div>
@@ -75,13 +83,22 @@
 		width: 100%;
 	}
 
-	.puppy-name {
+	.puppy-name,
+	.gender {
 		margin: 0;
 		color: var(--pure-white);
 		position: absolute;
 		bottom: 20px;
 		text-shadow: 3px 3px 6px var(--heading-color);
 		font-size: 2.5rem;
+	}
+
+	.gender {
+		font-size: 1.5rem;
+		font-weight: 500;
+		bottom: 5px;
+		color: var(--tertiary-color);
+		font-family: Arial, Helvetica, sans-serif;
 	}
 
 	.adopted {
@@ -116,6 +133,10 @@
 
 		.puppy-name {
 			font-size: 2rem;
+		}
+
+		.gender {
+			font-size: 1.3rem;
 		}
 	}
 </style>
