@@ -9,15 +9,15 @@
 <div class="modalContainer">
 	<h1>{puppy.name}</h1>
 	<picture style:margin-bottom="20px">
-		<source srcset={`/dogs/${puppy.name}/${currentImage}.webp`} type="image/webp" />
-		<img src={`/dogs/${puppy.name}/${currentImage}.png`} alt={puppy.name} />
+		<source srcset={`/dogs/${puppy.key}/${currentImage}.webp`} type="image/webp" />
+		<img src={`/dogs/${puppy.key}/${currentImage}.png`} alt={puppy.name} />
 	</picture>
 	<div class="modalOptions">
-		{#each Array.from(Array(puppy.imgCount).keys()) as imgSrc}
+		{#each Array.from(Array(puppy.imgCount).keys()).map((x) => x + 1) as imgSrc}
 			<img
-				on:click={() => (currentImage = imgSrc + 1)}
-				class={`thumb ${currentImage === imgSrc + 1 ? 'selected' : ''}`}
-				src={`/dogs/${puppy.name}/${imgSrc + 1}.webp`}
+				on:click={() => (currentImage = imgSrc)}
+				class={`thumb ${currentImage === imgSrc ? 'selected' : ''}`}
+				src={`/dogs/${puppy.key}/${imgSrc}.webp`}
 				alt=""
 			/>
 		{/each}
