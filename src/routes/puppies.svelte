@@ -1,6 +1,8 @@
 <script context="module">
 	import { browser, dev } from '$app/env';
 	import { puppies } from '$lib/constants';
+	import ImagePopup from '$lib/ImagePopup.svelte';
+	import { getContext } from 'svelte';
 
 	// we don't need any JS on this page, though we'll load
 	// it in dev so that we get hot module replacement...
@@ -13,6 +15,12 @@
 	// since there's no dynamic data here, we can prerender
 	// it so that it gets served as a static asset in prod
 	export const prerender = true;
+</script>
+
+<script lang="ts">
+	const { open } = getContext('simple-modal');
+
+	const showModal = (puppy) => open(ImagePopup, { puppy });
 </script>
 
 <svelte:head>
@@ -33,6 +41,7 @@
 					style:background={`url(${puppy.imgUrl})`}
 					style:background-size="contain"
 					style:background-position="center"
+					on:click={() => showModal(puppy)}
 				>
 					<img
 						class="adopted"

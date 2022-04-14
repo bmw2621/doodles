@@ -1,18 +1,22 @@
 <script lang="ts">
+	import { INSTAGRAM_LINK } from '$lib/constants';
 	import Header from '$lib/header/Header.svelte';
 	import Icon from 'svelte-awesome';
 	import { instagram } from 'svelte-awesome/icons';
+	import Modal from 'svelte-simple-modal';
 	import '../app.css';
 </script>
 
 <Header />
 
 <main>
-	<slot />
+	<Modal>
+		<slot />
+	</Modal>
 </main>
 
 <footer>
-	<a href="#"><Icon data={instagram} scale={3} /></a>
+	<a href={INSTAGRAM_LINK}><Icon data={instagram} scale={3} /></a>
 </footer>
 
 <style>

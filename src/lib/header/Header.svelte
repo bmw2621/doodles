@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { beforeNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
+	import { INSTAGRAM_LINK } from '$lib/constants';
 	import Icon from 'svelte-awesome';
 	import { bars, instagram } from 'svelte-awesome/icons';
 
@@ -57,7 +58,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://www.instagram.com/thedoodlestellall/"><Icon data={instagram} scale={3} /></a>
+		<a href={INSTAGRAM_LINK}><Icon data={instagram} scale={3} /></a>
 	</div>
 </header>
 
