@@ -53,7 +53,7 @@ export const puppies: Puppies = {
 			},
 			{
 				name: 'Pink',
-				adopted: false,
+				adopted: true,
 				key: 'pink',
 				imgUrl: '/dogs/pink/2.webp',
 				isMale: false,
