@@ -13,7 +13,7 @@ export const puppies: Puppies = {
 			},
 			{
 				name: 'Brownie',
-				adopted: true,
+				adopted: false,
 				key: 'brownie',
 				imgUrl: '/dogs/brownie/2.webp',
 				isMale: false,
@@ -37,7 +37,7 @@ export const puppies: Puppies = {
 			},
 			{
 				name: 'Lavender',
-				adopted: false,
+				adopted: true,
 				key: 'lavender',
 				imgUrl: '/dogs/lavender/2.webp',
 				isMale: false,
