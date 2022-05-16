@@ -13,7 +13,7 @@ export const puppies: Puppies = {
 			},
 			{
 				name: 'Brownie',
-				adopted: false,
+				adopted: true,
 				key: 'brownie',
 				imgUrl: '/dogs/brownie/2.webp',
 				isMale: false,
@@ -23,17 +23,17 @@ export const puppies: Puppies = {
 				name: 'Green',
 				adopted: false,
 				key: 'green',
-				imgUrl: '/dogs/green/2.webp',
+				imgUrl: '/dogs/green/5.webp',
 				isMale: true,
-				imgCount: 4
+				imgCount: 5
 			},
 			{
 				name: 'Grey',
 				adopted: false,
 				key: 'grey',
-				imgUrl: '/dogs/grey/2.webp',
+				imgUrl: '/dogs/grey/3.webp',
 				isMale: true,
-				imgCount: 2
+				imgCount: 3
 			},
 			{
 				name: 'Lavender',
@@ -63,9 +63,9 @@ export const puppies: Puppies = {
 				name: 'Royal Blue',
 				adopted: false,
 				key: 'royalBlue',
-				imgUrl: '/dogs/royalBlue/2.webp',
+				imgUrl: '/dogs/royalBlue/5.webp',
 				isMale: true,
-				imgCount: 4
+				imgCount: 5
 			}
 		],
 		breed: 'F2B Goldendoodles'

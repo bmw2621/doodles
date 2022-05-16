@@ -86,6 +86,7 @@
 		flex-direction: column;
 		align-items: center;
 		position: relative;
+		cursor: pointer;
 	}
 
 	img {
