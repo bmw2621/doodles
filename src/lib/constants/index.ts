@@ -7,9 +7,9 @@ export const puppies: Puppies = {
 				name: 'Black',
 				adopted: false,
 				key: 'black',
-				imgUrl: '/dogs/black/1.webp',
+				imgUrl: '/dogs/black/5.webp',
 				isMale: true,
-				imgCount: 4
+				imgCount: 5
 			},
 			{
 				name: 'Brownie',
@@ -31,9 +31,9 @@ export const puppies: Puppies = {
 				name: 'Grey',
 				adopted: false,
 				key: 'grey',
-				imgUrl: '/dogs/grey/3.webp',
+				imgUrl: '/dogs/grey/4.webp',
 				isMale: true,
-				imgCount: 3
+				imgCount: 4
 			},
 			{
 				name: 'Lavender',
@@ -45,7 +45,7 @@ export const puppies: Puppies = {
 			},
 			{
 				name: 'Light Blue',
-				adopted: false,
+				adopted: true,
 				key: 'lightBlue',
 				imgUrl: '/dogs/lightBlue/2.webp',
 				isMale: true,
